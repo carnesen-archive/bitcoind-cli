@@ -1,4 +1,4 @@
-import { spawn as spawnAsync } from '@carnesen/bitcoind';
+import { spawnBitcoind } from '@carnesen/bitcoind';
 import { leaf, option } from '@carnesen/cli';
 
 export const spawn = leaf({
@@ -16,7 +16,7 @@ export const spawn = leaf({
     }),
   },
   async action({ bitcoinHome, configFilePath }) {
-    await spawnAsync({
+    await spawnBitcoind({
       bitcoinHome: bitcoinHome === null ? undefined : bitcoinHome,
       configFilePath: configFilePath === null ? undefined : configFilePath,
     });

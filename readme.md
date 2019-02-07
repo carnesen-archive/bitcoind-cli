@@ -1,5 +1,5 @@
 # @carnesen/bitcoind-cli [![Build Status](https://travis-ci.com/carnesen/bitcoind-cli.svg?branch=master)](https://travis-ci.com/carnesen/bitcoind-cli)
-A Node.js command-line interface (CLI) for configuring bitcoin server software
+A command-line interface for managing the bitcoin server process `bitcoind`
 
 ## Install
 ```
